@@ -1,0 +1,15 @@
+contexts:
+  - name: JavaScript
+    pattern: "**/*.{js,jsx,ts,tsx}"
+    prompt: "You are a JavaScript expert. Help me with:"
+    triggers: ["// @ai"]
+    searchProviders: ["perplexity", "phind"]
+  - name: Python
+    pattern: "**/*.py"
+    prompt: "You are a Python expert. Help me with:"
+    triggers: ["# @ai"]
+    searchProviders: ["perplexity", "phind"]
+
+global:
+  defaultPrompt: "How can I help you?"
+  enabledProviders: ["perplexity", "phind"]
